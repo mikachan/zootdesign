@@ -1,17 +1,12 @@
 <script>
     // contact form js
 
-    // import 'ress';
+    import Social from "$lib/Social.svelte";
 </script>
 
 <header>
     <div><a href="tel:07973788953">07973 788953</a></div>
-    <ul class="social">
-        <li><a href="https://www.behance.net/RichardWithey"><img src="/images/behance.png" alt="Behance"></a></li>
-        <li><a href="https://www.pinterest.com/zootdesign/"><img src="/images/pinterest.png" alt="Pinterest"></a></li>
-        <li><a href="https://www.facebook.com/ZOOTDesign/"><img src="/images/facebook.png" alt="Facebook"></a></li>
-        <li><a href="https://twitter.com/ZOOTDesigns"><img src="/images/twitter.png" alt="Twitter"></a></li>
-    </ul>
+    <Social />
 </header>
 <main>
     <h1><img src="/images/zoot.png" alt="ZOOT Design"></h1>
@@ -20,12 +15,7 @@
 
     <div>
         <h3>Follow</h3>
-        <ul class="social">
-            <li><a href="https://www.behance.net/RichardWithey"><img src="/images/behance.png" alt="Behance"></a></li>
-            <li><a href="https://www.pinterest.com/zootdesign/"><img src="/images/pinterest.png" alt="Pinterest"></a></li>
-            <li><a href="https://www.facebook.com/ZOOTDesign/"><img src="/images/facebook.png" alt="Facebook"></a></li>
-            <li><a href="https://twitter.com/ZOOTDesigns"><img src="/images/twitter.png" alt="Twitter"></a></li>
-        </ul>
+        <Social />
     </div>
 
     <div class="getintouch">
@@ -107,13 +97,9 @@
         padding: 0 3rem;
         text-align: center;
     }
-    header, footer {
-        background: #000;
-        color: #fff;
-        padding: 1rem;
-    }
     header {
         margin-bottom: 2rem;
+        padding: 0 1rem;
     }
     header a:first-of-type {
         color: #fff;
@@ -125,6 +111,8 @@
         flex-wrap: wrap;
     }
     header, footer {
+        background: #000;
+        color: #fff;
         justify-content: space-between;
         align-items: center;
         text-align: left;
@@ -132,15 +120,22 @@
     .getintouch {
         margin: 2rem 0;
     }
+    .whatwedo {
+        gap: 1rem;
+    }
     .whatwedo > div {
+        margin-top: .5rem;
         min-width: 12rem;
-        flex: 1 1 33%;
+        flex: 1 1 calc(33% - 1rem);
     }
     .whatwedo img {
         width: 4rem;
     }
     footer {
+        display: flex;
+        flex-wrap: nowrap;
         gap: .5rem;
+        padding: 1rem;
         margin-top: 2rem;
     }
     footer .copyright img {
@@ -150,12 +145,5 @@
         display: flex;
         gap: .5rem;
         font-size: .75rem;
-    }
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    ul li {
-        display: inline-block;
     }
 </style>
