@@ -7,10 +7,10 @@
 <header>
     <div><a href="tel:07973788953">07973 788953</a></div>
     <ul class="social">
-        <li><img src="/images/behance.png" alt="Behance"></li>
-        <li><img src="/images/pinterest.png" alt="Pinterest"></li>
-        <li><img src="/images/facebook.png" alt="Facebook"></li>
-        <li><img src="/images/twitter.png" alt="Twitter"></li>
+        <li><a href="https://www.behance.net/RichardWithey"><img src="/images/behance.png" alt="Behance"></a></li>
+        <li><a href="https://www.pinterest.com/zootdesign/"><img src="/images/pinterest.png" alt="Pinterest"></a></li>
+        <li><a href="https://www.facebook.com/ZOOTDesign/"><img src="/images/facebook.png" alt="Facebook"></a></li>
+        <li><a href="https://twitter.com/ZOOTDesigns"><img src="/images/twitter.png" alt="Twitter"></a></li>
     </ul>
 </header>
 <main>
@@ -21,17 +21,19 @@
     <div>
         <h3>Follow</h3>
         <ul class="social">
-            <li><img src="/images/behance.png" alt="Behance"></li>
-            <li><img src="/images/pinterest.png" alt="Pinterest"></li>
-            <li><img src="/images/facebook.png" alt="Facebook"></li>
-            <li><img src="/images/twitter.png" alt="Twitter"></li>
+            <li><a href="https://www.behance.net/RichardWithey"><img src="/images/behance.png" alt="Behance"></a></li>
+            <li><a href="https://www.pinterest.com/zootdesign/"><img src="/images/pinterest.png" alt="Pinterest"></a></li>
+            <li><a href="https://www.facebook.com/ZOOTDesign/"><img src="/images/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com/ZOOTDesigns"><img src="/images/twitter.png" alt="Twitter"></a></li>
         </ul>
     </div>
 
-    <h2>Get in Touch</h2>
-    <p>If you would like us to quote on a particular project or if you would like to discuss the potential of a project with us or perhaps you have a question on one of our services if so, fill out the form below and we will get back to you promptly with a reply and or an answer...</p>
-
-    <!-- Form -->
+    <div class="getintouch">
+        <h2>Get in Touch</h2>
+        <p>If you would like us to quote on a particular project or if you would like to discuss the potential of a project with us or perhaps you have a question on one of our services if so, fill out the form below and we will get back to you promptly with a reply and or an answer...</p>
+    
+        <!-- Form -->
+    </div>
 
     <h2>What We Do</h2>
     <p>Read more about what we do perhaps we are exactly what you are looking for...</p>
@@ -90,10 +92,19 @@
     img {
         max-width: 100%;
     }
-
+    p {
+        margin-bottom: .5rem;
+    }
+    h1 {
+        margin-bottom: 2rem;
+    }
+    h2, h3 {
+        margin-bottom: .5rem;
+    }
     main {
         max-width: 900px;
         margin: 0 auto;
+        padding: 0 3rem;
         text-align: center;
     }
     header, footer {
@@ -111,13 +122,25 @@
     }
     header, footer, .whatwedo {
         display: flex;
+        flex-wrap: wrap;
     }
     header, footer {
         justify-content: space-between;
         align-items: center;
         text-align: left;
     }
+    .getintouch {
+        margin: 2rem 0;
+    }
+    .whatwedo > div {
+        min-width: 12rem;
+        flex: 1 1 33%;
+    }
+    .whatwedo img {
+        width: 4rem;
+    }
     footer {
+        gap: .5rem;
         margin-top: 2rem;
     }
     footer .copyright img {
