@@ -4,6 +4,11 @@
     import Social from "$lib/Social.svelte";
 </script>
 
+<svelte:head>
+    <title>ZOOT Design&trade;</title>
+    <meta name="description" content="Welcome to the home of ZOOT.">
+</svelte:head>
+
 <header>
     <div><a href="tel:07973788953">07973 788953</a></div>
     <Social />
