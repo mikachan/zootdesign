@@ -1,15 +1,15 @@
 <ul class="social">
     <li class="behance">
-        <a href="https://www.behance.net/RichardWithey"><i class="fa-brands fa-behance"></i></a>
+        <a href="https://www.behance.net/RichardWithey" title="Behance"><i class="fa-brands fa-behance"></i></a>
     </li>
     <li class="pinterest">
-        <a href="https://www.pinterest.com/zootdesign/"><i class="fa-brands fa-pinterest-p"></i></a>
+        <a href="https://www.pinterest.com/zootdesign/" title="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
     </li>
     <li class="facebook">
-        <a href="https://www.facebook.com/ZOOTDesign/"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.facebook.com/ZOOTDesign/" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
     </li>
     <li class="twitter">
-        <a href="https://twitter.com/ZOOTDesigns"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://twitter.com/ZOOTDesigns" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
     </li>
 </ul>
 
